@@ -8,6 +8,8 @@
 import AppKit
 import SwiftUI
 import Foundation
+import Firebase
+import FirebaseFirestore
 
 class StatusBarController {
     private var statusBar: NSStatusBar
@@ -31,8 +33,7 @@ class StatusBarController {
     @objc func togglePopover(sender: AnyObject) {
         if(popover.isShown) {
             hidePopover(sender)
-        }
-        else {
+        }else {
 //            showPopover(sender)
             let url = NSURL(fileURLWithPath: "/System/Library/CoreServices/ScreenSaverEngine.app", isDirectory: true) as URL
             let path = "/bin"
