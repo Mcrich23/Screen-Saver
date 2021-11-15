@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/mcrich/Downloads/MacOSMenuBarWeatherApp-main/Screen Saver.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>
