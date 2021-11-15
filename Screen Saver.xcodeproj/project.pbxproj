@@ -7,36 +7,100 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		224BAECA27416578001F1F1E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 224BAEC927416578001F1F1E /* GoogleService-Info.plist */; };
-		22E2CB012740EA7E00A621CC /* iosScreenSaverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E2CB002740EA7E00A621CC /* iosScreenSaverApp.swift */; };
-		22E2CB032740EA7E00A621CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E2CB022740EA7E00A621CC /* ContentView.swift */; };
-		22E2CB052740EA8000A621CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22E2CB042740EA8000A621CC /* Assets.xcassets */; };
-		22E2CB082740EA8000A621CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22E2CB072740EA8000A621CC /* Preview Assets.xcassets */; };
+		2267C8A42742303E00ACF2BC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2267C8A22742303E00ACF2BC /* Interface.storyboard */; };
+		2267C8A62742304100ACF2BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2267C8A52742304100ACF2BC /* Assets.xcassets */; };
+		2267C8AC2742304100ACF2BC /* watch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2267C8AB2742304100ACF2BC /* watch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2267C8B12742304100ACF2BC /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2267C8B02742304100ACF2BC /* InterfaceController.swift */; };
+		2267C8B32742304100ACF2BC /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2267C8B22742304100ACF2BC /* ExtensionDelegate.swift */; };
+		2267C8B52742304100ACF2BC /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2267C8B42742304100ACF2BC /* ComplicationController.swift */; };
+		2267C8B72742304200ACF2BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2267C8B62742304200ACF2BC /* Assets.xcassets */; };
+		2267C8BB2742304200ACF2BC /* watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2267C8A02742303E00ACF2BC /* watch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		22E2CB0D2740F5F900A621CC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22E2CB0C2740F5F900A621CC /* GoogleService-Info.plist */; };
-		22E2CB172740F7FA00A621CC /* Pods_iosScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E2CB162740F7FA00A621CC /* Pods_iosScreenSaver.framework */; };
-		C99E5E2191CC255D4E5EB66C /* Pods_Screen_Saver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA9C039C682E33E7586EFCE /* Pods_Screen_Saver.framework */; };
+		22E938C82741DA1200FE53E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E938C72741DA1200FE53E4 /* AppDelegate.swift */; };
+		22E938CA2741DA1200FE53E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E938C92741DA1200FE53E4 /* SceneDelegate.swift */; };
+		22E938CC2741DA1200FE53E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E938CB2741DA1200FE53E4 /* ViewController.swift */; };
+		22E938CF2741DA1200FE53E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E938CD2741DA1200FE53E4 /* Main.storyboard */; };
+		22E938D42741DA1300FE53E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E938D22741DA1300FE53E4 /* LaunchScreen.storyboard */; };
+		22E938DA2741DA2300FE53E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22E938D92741DA2300FE53E4 /* Assets.xcassets */; };
+		22E938DE274226F700FE53E4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22E938DD274226F600FE53E4 /* GoogleService-Info.plist */; };
 		D328C73025EE080D003CEAE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D328C72F25EE080D003CEAE8 /* AppDelegate.swift */; };
 		D328C73225EE080D003CEAE8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D328C73125EE080D003CEAE8 /* ContentView.swift */; };
 		D328C73425EE080D003CEAE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D328C73325EE080D003CEAE8 /* Assets.xcassets */; };
 		D328C73725EE080D003CEAE8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D328C73625EE080D003CEAE8 /* Preview Assets.xcassets */; };
 		D328C73A25EE080D003CEAE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D328C73825EE080D003CEAE8 /* Main.storyboard */; };
 		D328C74525EE0883003CEAE8 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D328C74425EE0883003CEAE8 /* StatusBarController.swift */; };
+		E86F2A681B93D4334DBBB18F /* Pods_Screen_Saver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F4CBF55BDA6EAA6A72B121 /* Pods_Screen_Saver.framework */; };
+		F27D6C684B02E3B140F89073 /* Pods_iosScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BAD61C74FE0567F087D5D4D /* Pods_iosScreenSaver.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2267C8AD2742304100ACF2BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D328C72425EE080C003CEAE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2267C8AA2742304100ACF2BC;
+			remoteInfo = "watch WatchKit Extension";
+		};
+		2267C8B92742304200ACF2BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D328C72425EE080C003CEAE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2267C89F2742303E00ACF2BC;
+			remoteInfo = watch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2267C8BC2742304200ACF2BC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2267C8BB2742304200ACF2BC /* watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2267C8BF2742304200ACF2BC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2267C8AC2742304100ACF2BC /* watch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		224BAEC927416578001F1F1E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		22E2CAFE2740EA7E00A621CC /* iosScreenSaver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosScreenSaver.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		22E2CB002740EA7E00A621CC /* iosScreenSaverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosScreenSaverApp.swift; sourceTree = "<group>"; };
-		22E2CB022740EA7E00A621CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		22E2CB042740EA8000A621CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		22E2CB072740EA8000A621CC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		06F5420CFF4702E01D03885A /* Pods-Screen Saver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Screen Saver.debug.xcconfig"; path = "Target Support Files/Pods-Screen Saver/Pods-Screen Saver.debug.xcconfig"; sourceTree = "<group>"; };
+		1BAD61C74FE0567F087D5D4D /* Pods_iosScreenSaver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosScreenSaver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2267C8A02742303E00ACF2BC /* watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2267C8A32742303E00ACF2BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		2267C8A52742304100ACF2BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2267C8AB2742304100ACF2BC /* watch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "watch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2267C8B02742304100ACF2BC /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		2267C8B22742304100ACF2BC /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		2267C8B42742304100ACF2BC /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		2267C8B62742304200ACF2BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2267C8B82742304200ACF2BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22E2CB0C2740F5F900A621CC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		22E2CB0E2740F6BD00A621CC /* iosScreenSaver.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iosScreenSaver.entitlements; sourceTree = "<group>"; };
-		22E2CB162740F7FA00A621CC /* Pods_iosScreenSaver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_iosScreenSaver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		647D23A68855B70FF1273C2F /* Pods-Screen Saver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Screen Saver.debug.xcconfig"; path = "Target Support Files/Pods-Screen Saver/Pods-Screen Saver.debug.xcconfig"; sourceTree = "<group>"; };
-		7842E30F968C5200E34714A8 /* Pods-iosScreenSaver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosScreenSaver.debug.xcconfig"; path = "Target Support Files/Pods-iosScreenSaver/Pods-iosScreenSaver.debug.xcconfig"; sourceTree = "<group>"; };
-		8DAF5A6C1343025D420652B9 /* Pods_iosScreenSaver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosScreenSaver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD122509234D702D2F68480D /* Pods-iosScreenSaver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosScreenSaver.release.xcconfig"; path = "Target Support Files/Pods-iosScreenSaver/Pods-iosScreenSaver.release.xcconfig"; sourceTree = "<group>"; };
+		22E938C52741DA1200FE53E4 /* iosScreenSaver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosScreenSaver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22E938C72741DA1200FE53E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		22E938C92741DA1200FE53E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		22E938CB2741DA1200FE53E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		22E938CE2741DA1200FE53E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		22E938D32741DA1300FE53E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		22E938D52741DA1300FE53E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22E938D92741DA2300FE53E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22E938DD274226F600FE53E4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		44E66D1E03CCD4114537914C /* Pods-iosScreenSaver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosScreenSaver.debug.xcconfig"; path = "Target Support Files/Pods-iosScreenSaver/Pods-iosScreenSaver.debug.xcconfig"; sourceTree = "<group>"; };
+		6E01718D039699191760D411 /* Pods-Screen Saver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Screen Saver.release.xcconfig"; path = "Target Support Files/Pods-Screen Saver/Pods-Screen Saver.release.xcconfig"; sourceTree = "<group>"; };
+		74F4CBF55BDA6EAA6A72B121 /* Pods_Screen_Saver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Screen_Saver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97F94FAAD8BD1EF81013AE6D /* Pods-iosScreenSaver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosScreenSaver.release.xcconfig"; path = "Target Support Files/Pods-iosScreenSaver/Pods-iosScreenSaver.release.xcconfig"; sourceTree = "<group>"; };
 		D328C72C25EE080D003CEAE8 /* Screen Saver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Screen Saver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D328C72F25EE080D003CEAE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D328C73125EE080D003CEAE8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,16 +110,21 @@
 		D328C73B25EE080D003CEAE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D328C73C25EE080D003CEAE8 /* Screen Saver.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Screen Saver.entitlements"; sourceTree = "<group>"; };
 		D328C74425EE0883003CEAE8 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
-		EA9DA06D39D9E9AE557EAA8C /* Pods-Screen Saver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Screen Saver.release.xcconfig"; path = "Target Support Files/Pods-Screen Saver/Pods-Screen Saver.release.xcconfig"; sourceTree = "<group>"; };
-		EFA9C039C682E33E7586EFCE /* Pods_Screen_Saver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Screen_Saver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		22E2CAFB2740EA7E00A621CC /* Frameworks */ = {
+		2267C8A82742304100ACF2BC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22E2CB172740F7FA00A621CC /* Pods_iosScreenSaver.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22E938C22741DA1200FE53E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F27D6C684B02E3B140F89073 /* Pods_iosScreenSaver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,63 +132,79 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C99E5E2191CC255D4E5EB66C /* Pods_Screen_Saver.framework in Frameworks */,
+				E86F2A681B93D4334DBBB18F /* Pods_Screen_Saver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B7769C23C774D8A2967E3C2 /* Frameworks */ = {
+		2267C8A12742303E00ACF2BC /* watch */ = {
 			isa = PBXGroup;
 			children = (
-				22E2CB162740F7FA00A621CC /* Pods_iosScreenSaver.framework */,
-				EFA9C039C682E33E7586EFCE /* Pods_Screen_Saver.framework */,
-				8DAF5A6C1343025D420652B9 /* Pods_iosScreenSaver.framework */,
+				2267C8A22742303E00ACF2BC /* Interface.storyboard */,
+				2267C8A52742304100ACF2BC /* Assets.xcassets */,
 			);
-			name = Frameworks;
+			path = watch;
 			sourceTree = "<group>";
 		};
-		22E2CAFF2740EA7E00A621CC /* iosScreenSaver */ = {
+		2267C8AF2742304100ACF2BC /* watch WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				22E2CB0E2740F6BD00A621CC /* iosScreenSaver.entitlements */,
-				22E2CB002740EA7E00A621CC /* iosScreenSaverApp.swift */,
-				22E2CB022740EA7E00A621CC /* ContentView.swift */,
-				224BAEC927416578001F1F1E /* GoogleService-Info.plist */,
-				22E2CB042740EA8000A621CC /* Assets.xcassets */,
-				22E2CB062740EA8000A621CC /* Preview Content */,
+				2267C8B02742304100ACF2BC /* InterfaceController.swift */,
+				2267C8B22742304100ACF2BC /* ExtensionDelegate.swift */,
+				2267C8B42742304100ACF2BC /* ComplicationController.swift */,
+				2267C8B62742304200ACF2BC /* Assets.xcassets */,
+				2267C8B82742304200ACF2BC /* Info.plist */,
+			);
+			path = "watch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		22E938C62741DA1200FE53E4 /* iosScreenSaver */ = {
+			isa = PBXGroup;
+			children = (
+				22E938C72741DA1200FE53E4 /* AppDelegate.swift */,
+				22E938C92741DA1200FE53E4 /* SceneDelegate.swift */,
+				22E938CB2741DA1200FE53E4 /* ViewController.swift */,
+				22E938CD2741DA1200FE53E4 /* Main.storyboard */,
+				22E938D92741DA2300FE53E4 /* Assets.xcassets */,
+				22E938D22741DA1300FE53E4 /* LaunchScreen.storyboard */,
+				22E938DD274226F600FE53E4 /* GoogleService-Info.plist */,
+				22E938D52741DA1300FE53E4 /* Info.plist */,
 			);
 			path = iosScreenSaver;
-			sourceTree = "<group>";
-		};
-		22E2CB062740EA8000A621CC /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				22E2CB072740EA8000A621CC /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		C24EC613EC1244F1D3FA8AA0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				647D23A68855B70FF1273C2F /* Pods-Screen Saver.debug.xcconfig */,
-				EA9DA06D39D9E9AE557EAA8C /* Pods-Screen Saver.release.xcconfig */,
-				7842E30F968C5200E34714A8 /* Pods-iosScreenSaver.debug.xcconfig */,
-				BD122509234D702D2F68480D /* Pods-iosScreenSaver.release.xcconfig */,
+				06F5420CFF4702E01D03885A /* Pods-Screen Saver.debug.xcconfig */,
+				6E01718D039699191760D411 /* Pods-Screen Saver.release.xcconfig */,
+				44E66D1E03CCD4114537914C /* Pods-iosScreenSaver.debug.xcconfig */,
+				97F94FAAD8BD1EF81013AE6D /* Pods-iosScreenSaver.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C9AA27103EF30404097AA28E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74F4CBF55BDA6EAA6A72B121 /* Pods_Screen_Saver.framework */,
+				1BAD61C74FE0567F087D5D4D /* Pods_iosScreenSaver.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D328C72325EE080C003CEAE8 = {
 			isa = PBXGroup;
 			children = (
 				D328C72E25EE080D003CEAE8 /* Screen Saver */,
-				22E2CAFF2740EA7E00A621CC /* iosScreenSaver */,
+				22E938C62741DA1200FE53E4 /* iosScreenSaver */,
+				2267C8A12742303E00ACF2BC /* watch */,
+				2267C8AF2742304100ACF2BC /* watch WatchKit Extension */,
 				D328C72D25EE080D003CEAE8 /* Products */,
 				C24EC613EC1244F1D3FA8AA0 /* Pods */,
-				0B7769C23C774D8A2967E3C2 /* Frameworks */,
+				C9AA27103EF30404097AA28E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,7 +212,9 @@
 			isa = PBXGroup;
 			children = (
 				D328C72C25EE080D003CEAE8 /* Screen Saver.app */,
-				22E2CAFE2740EA7E00A621CC /* iosScreenSaver.app */,
+				22E938C52741DA1200FE53E4 /* iosScreenSaver.app */,
+				2267C8A02742303E00ACF2BC /* watch.app */,
+				2267C8AB2742304100ACF2BC /* watch WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,34 +246,70 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		22E2CAFD2740EA7E00A621CC /* iosScreenSaver */ = {
+		2267C89F2742303E00ACF2BC /* watch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 22E2CB092740EA8000A621CC /* Build configuration list for PBXNativeTarget "iosScreenSaver" */;
+			buildConfigurationList = 2267C8C32742304200ACF2BC /* Build configuration list for PBXNativeTarget "watch" */;
 			buildPhases = (
-				0FED12D2A969E1CDBD86FD45 /* [CP] Check Pods Manifest.lock */,
-				22E2CAFA2740EA7E00A621CC /* Sources */,
-				22E2CAFB2740EA7E00A621CC /* Frameworks */,
-				22E2CAFC2740EA7E00A621CC /* Resources */,
-				C30312D8831303B03C99FC10 /* [CP] Embed Pods Frameworks */,
+				2267C89E2742303E00ACF2BC /* Resources */,
+				2267C8BF2742304200ACF2BC /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2267C8AE2742304100ACF2BC /* PBXTargetDependency */,
+			);
+			name = watch;
+			productName = watch;
+			productReference = 2267C8A02742303E00ACF2BC /* watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		2267C8AA2742304100ACF2BC /* watch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2267C8C22742304200ACF2BC /* Build configuration list for PBXNativeTarget "watch WatchKit Extension" */;
+			buildPhases = (
+				2267C8A72742304100ACF2BC /* Sources */,
+				2267C8A82742304100ACF2BC /* Frameworks */,
+				2267C8A92742304100ACF2BC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = "watch WatchKit Extension";
+			productName = "watch WatchKit Extension";
+			productReference = 2267C8AB2742304100ACF2BC /* watch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		22E938C42741DA1200FE53E4 /* iosScreenSaver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22E938D62741DA1300FE53E4 /* Build configuration list for PBXNativeTarget "iosScreenSaver" */;
+			buildPhases = (
+				A8CCAB2AD7F99C87F2A071EC /* [CP] Check Pods Manifest.lock */,
+				22E938C12741DA1200FE53E4 /* Sources */,
+				22E938C22741DA1200FE53E4 /* Frameworks */,
+				22E938C32741DA1200FE53E4 /* Resources */,
+				21A6F46D2F6588D69EE0BAC9 /* [CP] Embed Pods Frameworks */,
+				2267C8BC2742304200ACF2BC /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2267C8BA2742304200ACF2BC /* PBXTargetDependency */,
+			);
 			name = iosScreenSaver;
 			productName = iosScreenSaver;
-			productReference = 22E2CAFE2740EA7E00A621CC /* iosScreenSaver.app */;
+			productReference = 22E938C52741DA1200FE53E4 /* iosScreenSaver.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D328C72B25EE080C003CEAE8 /* Screen Saver */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D328C73F25EE080D003CEAE8 /* Build configuration list for PBXNativeTarget "Screen Saver" */;
 			buildPhases = (
-				D1F741E9DD7C43DC1BA80325 /* [CP] Check Pods Manifest.lock */,
+				0C85325319C707254ADD74C8 /* [CP] Check Pods Manifest.lock */,
 				D328C72825EE080C003CEAE8 /* Sources */,
 				D328C72925EE080C003CEAE8 /* Frameworks */,
 				D328C72A25EE080C003CEAE8 /* Resources */,
-				2BC72CE85D44362C80207AFA /* [CP] Embed Pods Frameworks */,
+				331604D0F897FF091DA2342C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -206,7 +329,13 @@
 				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
-					22E2CAFD2740EA7E00A621CC = {
+					2267C89F2742303E00ACF2BC = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					2267C8AA2742304100ACF2BC = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					22E938C42741DA1200FE53E4 = {
 						CreatedOnToolsVersion = 13.1;
 					};
 					D328C72B25EE080C003CEAE8 = {
@@ -228,19 +357,39 @@
 			projectRoot = "";
 			targets = (
 				D328C72B25EE080C003CEAE8 /* Screen Saver */,
-				22E2CAFD2740EA7E00A621CC /* iosScreenSaver */,
+				22E938C42741DA1200FE53E4 /* iosScreenSaver */,
+				2267C89F2742303E00ACF2BC /* watch */,
+				2267C8AA2742304100ACF2BC /* watch WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		22E2CAFC2740EA7E00A621CC /* Resources */ = {
+		2267C89E2742303E00ACF2BC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22E2CB082740EA8000A621CC /* Preview Assets.xcassets in Resources */,
-				22E2CB052740EA8000A621CC /* Assets.xcassets in Resources */,
-				224BAECA27416578001F1F1E /* GoogleService-Info.plist in Resources */,
+				2267C8A62742304100ACF2BC /* Assets.xcassets in Resources */,
+				2267C8A42742303E00ACF2BC /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2267C8A92742304100ACF2BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2267C8B72742304200ACF2BC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22E938C32741DA1200FE53E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22E938D42741DA1300FE53E4 /* LaunchScreen.storyboard in Resources */,
+				22E938DE274226F700FE53E4 /* GoogleService-Info.plist in Resources */,
+				22E938DA2741DA2300FE53E4 /* Assets.xcassets in Resources */,
+				22E938CF2741DA1200FE53E4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,63 +407,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0FED12D2A969E1CDBD86FD45 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-iosScreenSaver-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2BC72CE85D44362C80207AFA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Screen Saver/Pods-Screen Saver-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Screen Saver/Pods-Screen Saver-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Screen Saver/Pods-Screen Saver-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C30312D8831303B03C99FC10 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iosScreenSaver/Pods-iosScreenSaver-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iosScreenSaver/Pods-iosScreenSaver-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iosScreenSaver/Pods-iosScreenSaver-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D1F741E9DD7C43DC1BA80325 /* [CP] Check Pods Manifest.lock */ = {
+		0C85325319C707254ADD74C8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -336,15 +429,82 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		21A6F46D2F6588D69EE0BAC9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iosScreenSaver/Pods-iosScreenSaver-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iosScreenSaver/Pods-iosScreenSaver-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iosScreenSaver/Pods-iosScreenSaver-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		331604D0F897FF091DA2342C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Screen Saver/Pods-Screen Saver-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Screen Saver/Pods-Screen Saver-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Screen Saver/Pods-Screen Saver-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8CCAB2AD7F99C87F2A071EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iosScreenSaver-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		22E2CAFA2740EA7E00A621CC /* Sources */ = {
+		2267C8A72742304100ACF2BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22E2CB032740EA7E00A621CC /* ContentView.swift in Sources */,
-				22E2CB012740EA7E00A621CC /* iosScreenSaverApp.swift in Sources */,
+				2267C8B32742304100ACF2BC /* ExtensionDelegate.swift in Sources */,
+				2267C8B12742304100ACF2BC /* InterfaceController.swift in Sources */,
+				2267C8B52742304100ACF2BC /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22E938C12741DA1200FE53E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22E938CC2741DA1200FE53E4 /* ViewController.swift in Sources */,
+				22E938C82741DA1200FE53E4 /* AppDelegate.swift in Sources */,
+				22E938CA2741DA1200FE53E4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,7 +520,44 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		2267C8AE2742304100ACF2BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2267C8AA2742304100ACF2BC /* watch WatchKit Extension */;
+			targetProxy = 2267C8AD2742304100ACF2BC /* PBXContainerItemProxy */;
+		};
+		2267C8BA2742304200ACF2BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2267C89F2742303E00ACF2BC /* watch */;
+			targetProxy = 2267C8B92742304200ACF2BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		2267C8A22742303E00ACF2BC /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2267C8A32742303E00ACF2BC /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		22E938CD2741DA1200FE53E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22E938CE2741DA1200FE53E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		22E938D22741DA1300FE53E4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22E938D32741DA1300FE53E4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		D328C73825EE080D003CEAE8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -372,25 +569,140 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		22E2CB0A2740EA8000A621CC /* Debug */ = {
+		2267C8BD2742304200ACF2BC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7842E30F968C5200E34714A8 /* Pods-iosScreenSaver.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L7JQRVXU2V;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = watch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = watch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.Mcrich23.iosScreenSaver;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Mcrich23.iosScreenSaver.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		2267C8BE2742304200ACF2BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L7JQRVXU2V;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = watch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = watch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.Mcrich23.iosScreenSaver;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Mcrich23.iosScreenSaver.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		2267C8C02742304200ACF2BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L7JQRVXU2V;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "watch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "watch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Mcrich23.iosScreenSaver.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		2267C8C12742304200ACF2BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L7JQRVXU2V;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "watch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "watch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Mcrich23.iosScreenSaver.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		22E938D72741DA1300FE53E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44E66D1E03CCD4114537914C /* Pods-iosScreenSaver.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CODE_SIGN_ENTITLEMENTS = iosScreenSaver/iosScreenSaver.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"iosScreenSaver/Preview Content\"";
 				DEVELOPMENT_TEAM = L7JQRVXU2V;
-				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = NO;
-				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = iosScreenSaver/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -402,32 +714,28 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Mcrich23.iosScreenSaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		22E2CB0B2740EA8000A621CC /* Release */ = {
+		22E938D82741DA1300FE53E4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD122509234D702D2F68480D /* Pods-iosScreenSaver.release.xcconfig */;
+			baseConfigurationReference = 97F94FAAD8BD1EF81013AE6D /* Pods-iosScreenSaver.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CODE_SIGN_ENTITLEMENTS = iosScreenSaver/iosScreenSaver.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"iosScreenSaver/Preview Content\"";
 				DEVELOPMENT_TEAM = L7JQRVXU2V;
-				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = NO;
-				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = iosScreenSaver/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -439,7 +747,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Mcrich23.iosScreenSaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -564,7 +871,7 @@
 		};
 		D328C74025EE080D003CEAE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 647D23A68855B70FF1273C2F /* Pods-Screen Saver.debug.xcconfig */;
+			baseConfigurationReference = 06F5420CFF4702E01D03885A /* Pods-Screen Saver.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -591,7 +898,7 @@
 		};
 		D328C74125EE080D003CEAE8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA9DA06D39D9E9AE557EAA8C /* Pods-Screen Saver.release.xcconfig */;
+			baseConfigurationReference = 6E01718D039699191760D411 /* Pods-Screen Saver.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -619,11 +926,29 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		22E2CB092740EA8000A621CC /* Build configuration list for PBXNativeTarget "iosScreenSaver" */ = {
+		2267C8C22742304200ACF2BC /* Build configuration list for PBXNativeTarget "watch WatchKit Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				22E2CB0A2740EA8000A621CC /* Debug */,
-				22E2CB0B2740EA8000A621CC /* Release */,
+				2267C8C02742304200ACF2BC /* Debug */,
+				2267C8C12742304200ACF2BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2267C8C32742304200ACF2BC /* Build configuration list for PBXNativeTarget "watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2267C8BD2742304200ACF2BC /* Debug */,
+				2267C8BE2742304200ACF2BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22E938D62741DA1300FE53E4 /* Build configuration list for PBXNativeTarget "iosScreenSaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22E938D72741DA1300FE53E4 /* Debug */,
+				22E938D82741DA1300FE53E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="19455" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch40"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="19454"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="watch" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Pairing Code:" id="yhl-cO-5Yz"/>
+                        <button width="1" alignment="left" title="Start Screen Saver" id="Uwj-mK-flQ">
+                            <connections>
+                                <action selector="start" destination="AgC-eL-Hgc" id="NIg-OO-F3T"/>
+                            </connections>
+                        </button>
+                        <label alignment="left" text="Error: No pairing code found, please enter a pairing code on your iPhone." textAlignment="center" numberOfLines="0" id="OuA-dn-AVx">
+                            <color key="textColor" red="1" green="0.22207552103151307" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="error" destination="OuA-dn-AVx" id="FWU-Sh-Hep"/>
+                        <outlet property="pairingCode" destination="yhl-cO-5Yz" id="dDi-67-E8l"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-16" y="11"/>
+        </scene>
+    </scenes>
+</document>
