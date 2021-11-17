@@ -8,8 +8,6 @@
 import AppKit
 import SwiftUI
 import Foundation
-import Firebase
-import FirebaseFirestore
 
 class StatusBarController {
     private var statusBar: NSStatusBar

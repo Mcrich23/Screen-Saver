@@ -11,7 +11,7 @@ import WatchConnectivity
 
 class ViewController: UIViewController {
 
-    let db = Firestore.firestore()
+    let ref = Database.database().reference()
     var session: WCSession?
     @IBOutlet weak var code: UITextField!
     func startScreenSaver() {
@@ -20,22 +20,19 @@ class ViewController: UIViewController {
         if code.text == "" {
             errorAlert(error: "No Pairing Code")
         }else {
-            db.collection("pairingCodes").document(code.text ?? "").addSnapshotListener { doc, error in
-            if error == nil {
-                if doc != nil && doc!.exists {
-                    if (doc!.get("ScreenSaver") as? Bool) != nil {
+            ref.child("pairingCodes").child(code.text ?? "").getData { err, snapshot in
+                if err == nil {
+                    if snapshot.exists() {
                         print("doc exists")
-                        self.db.collection("pairingCodes").document(self.code.text ?? "").setData(["ScreenSaver" : true])
+                        self.ref.child("pairingCodes").child(self.code.text ?? "").setValue(["ScreenSaver" : true])
                     }else {
-                        self.errorAlert(error: "Document Does Not Exist")
+                        self.errorAlert(error: "Pairing Code Does Not Exist")
                     }
                 }else {
-                    self.errorAlert(error: "Document Does Not Exist")
+                    print("error = \(err)")
+                    self.errorAlert(error: "Pairing Code Document Does Not Exist")
                 }
-            }else {
-                self.errorAlert(error: "Document Collection Does Not Exist")
             }
-        }
         }
     }
     
@@ -52,7 +49,7 @@ class ViewController: UIViewController {
     @IBAction func codeCommit(_ sender: Any) {
         print("commit code")
         if let validSession = self.session, validSession.isReachable {//5.1
-            let data: [String: Any] = ["pairingCode": "\(code.text)" as String] // Create your Dictionay as per uses
+            let data: [String: Any] = ["pairingCode": "\(code.text ?? "")" as String] // Create your Dictionay as per uses
           validSession.sendMessage(data, replyHandler: nil, errorHandler: nil)
         }
         UserDefaults.standard.set(code.text, forKey: "pairingCode")
