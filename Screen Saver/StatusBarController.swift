@@ -23,23 +23,46 @@ class StatusBarController {
             statusBarButton.image = #imageLiteral(resourceName: "Weather")
             statusBarButton.image?.size = NSSize(width: 18.0, height: 18.0)
             statusBarButton.image?.isTemplate = true
-            statusBarButton.action = #selector(togglePopover(sender:))
+            statusBarButton.action = #selector(togglePopover(sender: ))
+            statusBarButton.sendAction(on: [.leftMouseUp, .rightMouseUp])
             statusBarButton.target = self
         }
     }
     
     @objc func togglePopover(sender: AnyObject) {
-        if(popover.isShown) {
-            hidePopover(sender)
+        let event = NSApp.currentEvent!
+        print("hasOppened = \(AppDelegate.hasOpened)")
+        if AppDelegate.hasOpened {
+            if event.type == NSEvent.EventType.leftMouseUp {
+                print("Right click")
+                if(popover.isShown) {
+                    hidePopover(sender)
+                }else {
+        //            showPopover(sender)
+                    let url = NSURL(fileURLWithPath: "/System/Library/CoreServices/ScreenSaverEngine.app", isDirectory: true) as URL
+                    let path = "/bin"
+                    let configuration = NSWorkspace.OpenConfiguration()
+                    configuration.arguments = [path]
+                    NSWorkspace.shared.openApplication(at: url,
+                                                       configuration: configuration,
+                                                       completionHandler: nil)
+                }
+            } else {
+                print("Left click")
+                if(popover.isShown) {
+                    hidePopover(sender)
+                }else {
+                    showPopover(sender)
+                }
+            }
         }else {
-//            showPopover(sender)
-            let url = NSURL(fileURLWithPath: "/System/Library/CoreServices/ScreenSaverEngine.app", isDirectory: true) as URL
-            let path = "/bin"
-            let configuration = NSWorkspace.OpenConfiguration()
-            configuration.arguments = [path]
-            NSWorkspace.shared.openApplication(at: url,
-                                               configuration: configuration,
-                                               completionHandler: nil)
+            if(popover.isShown) {
+                hidePopover(sender)
+            }else {
+                AppDelegate.hasOpened = true
+                UserDefaults.standard.set(true, forKey: "hasOpened")
+                showPopover(sender)
+            }
         }
     }
     

@@ -16,22 +16,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var window: NSWindow!
     var popover = NSPopover.init()
     static var pairingCode = UserDefaults.standard.string(forKey: "pairingCode")
+    static var hasOpened = UserDefaults.standard.bool(forKey: "hasOpened")
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        print("hasOppened = \(AppDelegate.hasOpened)")
         FirebaseApp.configure()
         setupFirebase()
         let contentView = ContentView()
         popover.contentSize = NSSize(width: 360, height: 360)
         popover.contentViewController = NSHostingController(rootView: contentView)
         statusBar = StatusBarController.init(popover)
-        window = NSWindow(
-                    contentRect: NSRect(x: 0, y: 0, width: 480, height: 300),
-                    styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView],
-                    backing: .buffered, defer: false)
-        window.center()
-        window.setFrameAutosaveName("Main Window")
-        window.contentView = NSHostingView(rootView: contentView)
-        window.makeKeyAndOrderFront(nil)
     }
     func setupFirebase() {
         let ref = Database.database().reference()
