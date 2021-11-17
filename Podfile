@@ -7,7 +7,7 @@ target 'iosScreenSaver' do
 
   # Pods for iosScreenSaver
 	pod 'Firebase'
-	pod 'Firebase/Database'
+	pod 'Firebase/Firestore'
 
 end
 
@@ -17,24 +17,6 @@ target 'Screen Saver' do
 
   # Pods for Screen Saver
 	pod 'Firebase'
-	pod 'Firebase/Database'
-
-end
-
-target 'watch' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
-
-  # Pods for watch
-	pod 'Firebase/Database'
-
-end
-
-target 'watch WatchKit Extension' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
-
-  # Pods for watch WatchKit Extension
-	pod 'Firebase/Database'
+	pod 'Firebase/Firestore'
 
 end

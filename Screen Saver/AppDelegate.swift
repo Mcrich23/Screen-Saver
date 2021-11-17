@@ -8,7 +8,7 @@
 import Cocoa
 import SwiftUI
 import Firebase
-import FirebaseDatabase
+import FirebaseFirestore
 
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -26,26 +26,30 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusBar = StatusBarController.init(popover)
     }
     func setupFirebase() {
-        let ref = Database.database().reference()
+        let db = Firestore.firestore()
         func listen(code: String) {
-            ref.child("pairingCodes").child(code).observe(.value) { snapshot in
-                let value = snapshot.value as? NSDictionary
-                if value!["ScreenSaver"] as! Bool {
-                    print("Start Screen Saver")
-                    ref.child("pairingCodes").child(code).setValue(["ScreenSaver" : false])
-                    let url = NSURL(fileURLWithPath: "/System/Library/CoreServices/ScreenSaverEngine.app", isDirectory: true) as URL
-                    let path = "/bin"
-                    let configuration = NSWorkspace.OpenConfiguration()
-                    configuration.arguments = [path]
-                    NSWorkspace.shared.openApplication(at: url,
-                                                       configuration: configuration,
-                                                       completionHandler: nil)
+            db.collection("pairingCodes").document(code).addSnapshotListener { doc, error in
+                if error == nil {
+                    if doc != nil && doc!.exists {
+                        if let bool = doc!.get("ScreenSaver") as? Bool {
+                            if bool {
+                                db.collection("pairingCodes").document(code).setData(["ScreenSaver" : false])
+                                let url = NSURL(fileURLWithPath: "/System/Library/CoreServices/ScreenSaverEngine.app", isDirectory: true) as URL
+                                let path = "/bin"
+                                let configuration = NSWorkspace.OpenConfiguration()
+                                configuration.arguments = [path]
+                                NSWorkspace.shared.openApplication(at: url,
+                                                                   configuration: configuration,
+                                                                   completionHandler: nil)
+                            }
+                        }
+                    }
                 }
             }
         }
         if let code = UserDefaults.standard.string(forKey: "pairingCode") {
             AppDelegate.pairingCode = code
-            ref.child("pairingCodes").child(code).setValue(["ScreenSaver" : false])
+            db.collection("pairingCodes").document(code).setData(["ScreenSaver" : false])
             listen(code: code)
         }else {
             let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
@@ -55,7 +59,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             }
             UserDefaults.standard.set(code, forKey: "pairingCode")
             AppDelegate.pairingCode = code
-            ref.child("pairingCodes").child(code).setValue(["ScreenSaver" : false])
+            db.collection("pairingCodes").document(code).setData(["ScreenSaver" : false])
             listen(code: code)
         }
     }
