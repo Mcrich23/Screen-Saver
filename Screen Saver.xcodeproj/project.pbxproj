@@ -84,6 +84,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2265C19D2745C53A0015240A /* Screen Saver.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Screen Saver.entitlements"; sourceTree = "<group>"; };
 		2267C8A02742303E00ACF2BC /* Screen Saver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Screen Saver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2267C8A32742303E00ACF2BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		2267C8A52742304100ACF2BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,7 +112,6 @@
 		D328C73625EE080D003CEAE8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D328C73925EE080D003CEAE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D328C73B25EE080D003CEAE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D328C73C25EE080D003CEAE8 /* Screen Saver.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Screen Saver.entitlements"; sourceTree = "<group>"; };
 		D328C74425EE0883003CEAE8 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -230,9 +230,9 @@
 				D328C73125EE080D003CEAE8 /* ContentView.swift */,
 				D328C73325EE080D003CEAE8 /* Assets.xcassets */,
 				D328C73825EE080D003CEAE8 /* Main.storyboard */,
-				D328C73B25EE080D003CEAE8 /* Info.plist */,
 				22E2CB0C2740F5F900A621CC /* GoogleService-Info.plist */,
-				D328C73C25EE080D003CEAE8 /* Screen Saver.entitlements */,
+				D328C73B25EE080D003CEAE8 /* Info.plist */,
+				2265C19D2745C53A0015240A /* Screen Saver.entitlements */,
 				D328C73525EE080D003CEAE8 /* Preview Content */,
 			);
 			path = "Screen Saver";
@@ -816,9 +816,10 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Screen Saver/Preview Content\"";
 				DEVELOPMENT_TEAM = L7JQRVXU2V;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = "Screen Saver/Info.plist";
@@ -827,7 +828,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mcrich.ScreenSaver;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Mcrich23.ScreenSaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -842,9 +843,10 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Screen Saver/Preview Content\"";
 				DEVELOPMENT_TEAM = L7JQRVXU2V;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = "Screen Saver/Info.plist";
@@ -853,7 +855,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mcrich.ScreenSaver;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Mcrich23.ScreenSaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
