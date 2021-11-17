@@ -14,8 +14,13 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+<<<<<<< HEAD
                BlueprintIdentifier = "22FAC7712744503A0020B5FD"
+               BuildableName = "SSR.app"
+=======
+               BlueprintIdentifier = "2267C89F2742303E00ACF2BC"
                BuildableName = "Screen Saver.app"
+>>>>>>> parent of b5106e6 (Updates for window for Macos)
                BlueprintName = "watch"
                ReferencedContainer = "container:Screen Saver.xcodeproj">
             </BuildableReference>
@@ -54,18 +59,21 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <RemoteRunnable
-         runnableDebuggingMode = "2"
-         BundleIdentifier = "com.apple.Carousel"
-         RemotePath = "/(null)">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
+<<<<<<< HEAD
             BlueprintIdentifier = "22FAC7712744503A0020B5FD"
+            BuildableName = "SSR.app"
+=======
+            BlueprintIdentifier = "2267C89F2742303E00ACF2BC"
             BuildableName = "Screen Saver.app"
+>>>>>>> parent of b5106e6 (Updates for window for Macos)
             BlueprintName = "watch"
             ReferencedContainer = "container:Screen Saver.xcodeproj">
          </BuildableReference>
-      </RemoteRunnable>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -73,14 +81,13 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <RemoteRunnable
-         runnableDebuggingMode = "2"
-         BundleIdentifier = "com.apple.Carousel"
-         RemotePath = "/(null)">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
+<<<<<<< HEAD
             BlueprintIdentifier = "22FAC7712744503A0020B5FD"
-            BuildableName = "Screen Saver.app"
+            BuildableName = "SSR.app"
             BlueprintName = "watch"
             ReferencedContainer = "container:Screen Saver.xcodeproj">
          </BuildableReference>
@@ -89,11 +96,19 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "22FAC7712744503A0020B5FD"
-            BuildableName = "Screen Saver.app"
+            BuildableName = "SSR.app"
             BlueprintName = "watch"
             ReferencedContainer = "container:Screen Saver.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
+=======
+            BlueprintIdentifier = "2267C89F2742303E00ACF2BC"
+            BuildableName = "Screen Saver.app"
+            BlueprintName = "watch"
+            ReferencedContainer = "container:Screen Saver.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+>>>>>>> parent of b5106e6 (Updates for window for Macos)
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

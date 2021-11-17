@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import FirebaseDatabase
 import WatchConnectivity
 
 class ViewController: UIViewController {
@@ -21,15 +22,14 @@ class ViewController: UIViewController {
             errorAlert(error: "No Pairing Code")
         }else {
             ref.child("pairingCodes").child(code.text ?? "").getData { err, snapshot in
-                if err == nil {
+                if err != nil {
                     if snapshot.exists() {
                         print("doc exists")
-                        self.ref.child("pairingCodes").child(self.code.text ?? "").setValue(["ScreenSaver" : true])
+                        self.ref.child("pairingCodes").child(self.code.text ?? "").setValue(["ScreenSaver" : false])
                     }else {
                         self.errorAlert(error: "Pairing Code Does Not Exist")
                     }
                 }else {
-                    print("error = \(err)")
                     self.errorAlert(error: "Pairing Code Document Does Not Exist")
                 }
             }
