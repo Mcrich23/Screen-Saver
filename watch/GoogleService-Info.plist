@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>426430207729-6fqr4e4imsh2kpe56br8dhfue4850d79.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.426430207729-6fqr4e4imsh2kpe56br8dhfue4850d79</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBuWnNaYBCjPsmTwjwyBaOTtxk6YTggKBc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>426430207729</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.Mcrich23.ScreenSaver.ios.watchkitapp</string>
+	<key>PROJECT_ID</key>
+	<string>screensaver-77b42</string>
+	<key>STORAGE_BUCKET</key>
+	<string>screensaver-77b42.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:426430207729:ios:1f06cbf9aa4d2962ae7b50</string>
+	<key>DATABASE_URL</key>
+	<string>https://screensaver-77b42-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D328C72B25EE080C003CEAE8"
+               BlueprintIdentifier = "22DCB75727457C430013840E"
                BuildableName = "Screen Saver.app"
                BlueprintName = "Screen Saver"
                ReferencedContainer = "container:Screen Saver.xcodeproj">
@@ -44,12 +44,21 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D328C72B25EE080C003CEAE8"
+            BlueprintIdentifier = "22DCB778274580F80013840E"
+            BuildableName = "ScreenSaver.app"
+            BlueprintName = "ScreenSaver"
+            ReferencedContainer = "container:Screen Saver.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "22DCB75727457C430013840E"
             BuildableName = "Screen Saver.app"
             BlueprintName = "Screen Saver"
             ReferencedContainer = "container:Screen Saver.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -61,7 +70,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D328C72B25EE080C003CEAE8"
+            BlueprintIdentifier = "22DCB75727457C430013840E"
             BuildableName = "Screen Saver.app"
             BlueprintName = "Screen Saver"
             ReferencedContainer = "container:Screen Saver.xcodeproj">

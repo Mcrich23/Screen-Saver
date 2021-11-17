@@ -6,7 +6,6 @@ target 'iosScreenSaver' do
   use_frameworks!
 
   # Pods for iosScreenSaver
-	pod 'Firebase'
 	pod 'Firebase/Database'
 
 end
@@ -16,7 +15,6 @@ target 'Screen Saver' do
   use_frameworks!
 
   # Pods for Screen Saver
-	pod 'Firebase'
 	pod 'Firebase/Database'
 
 end
