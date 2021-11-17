@@ -15,7 +15,11 @@
             <BuildableReference
                BuildableIdentifier = "primary"
 <<<<<<< HEAD
+<<<<<<< HEAD
                BlueprintIdentifier = "22DCB778274580F80013840E"
+=======
+               BlueprintIdentifier = "D328C72B25EE080C003CEAE8"
+>>>>>>> parent of b5106e6 (Updates for window for Macos)
 =======
                BlueprintIdentifier = "D328C72B25EE080C003CEAE8"
 >>>>>>> parent of b5106e6 (Updates for window for Macos)
@@ -49,7 +53,11 @@
          <BuildableReference
             BuildableIdentifier = "primary"
 <<<<<<< HEAD
+<<<<<<< HEAD
             BlueprintIdentifier = "22DCB778274580F80013840E"
+=======
+            BlueprintIdentifier = "D328C72B25EE080C003CEAE8"
+>>>>>>> parent of b5106e6 (Updates for window for Macos)
 =======
             BlueprintIdentifier = "D328C72B25EE080C003CEAE8"
 >>>>>>> parent of b5106e6 (Updates for window for Macos)
@@ -70,7 +78,11 @@
          <BuildableReference
             BuildableIdentifier = "primary"
 <<<<<<< HEAD
+<<<<<<< HEAD
             BlueprintIdentifier = "22DCB778274580F80013840E"
+=======
+            BlueprintIdentifier = "D328C72B25EE080C003CEAE8"
+>>>>>>> parent of b5106e6 (Updates for window for Macos)
 =======
             BlueprintIdentifier = "D328C72B25EE080C003CEAE8"
 >>>>>>> parent of b5106e6 (Updates for window for Macos)

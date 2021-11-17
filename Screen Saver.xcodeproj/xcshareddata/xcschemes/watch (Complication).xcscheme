@@ -15,9 +15,12 @@
             <BuildableReference
                BuildableIdentifier = "primary"
 <<<<<<< HEAD
+<<<<<<< HEAD
                BlueprintIdentifier = "22FAC7712744503A0020B5FD"
                BuildableName = "SSR.app"
 =======
+=======
+>>>>>>> parent of b5106e6 (Updates for window for Macos)
                BlueprintIdentifier = "2267C89F2742303E00ACF2BC"
                BuildableName = "Screen Saver.app"
 >>>>>>> parent of b5106e6 (Updates for window for Macos)
@@ -65,9 +68,12 @@
          <BuildableReference
             BuildableIdentifier = "primary"
 <<<<<<< HEAD
+<<<<<<< HEAD
             BlueprintIdentifier = "22FAC7712744503A0020B5FD"
             BuildableName = "SSR.app"
 =======
+=======
+>>>>>>> parent of b5106e6 (Updates for window for Macos)
             BlueprintIdentifier = "2267C89F2742303E00ACF2BC"
             BuildableName = "Screen Saver.app"
 >>>>>>> parent of b5106e6 (Updates for window for Macos)
@@ -88,6 +94,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
 <<<<<<< HEAD
+<<<<<<< HEAD
             BlueprintIdentifier = "22FAC7712744503A0020B5FD"
             BuildableName = "SSR.app"
             BlueprintName = "watch"
@@ -103,6 +110,14 @@
             ReferencedContainer = "container:Screen Saver.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
+=======
+            BlueprintIdentifier = "2267C89F2742303E00ACF2BC"
+            BuildableName = "Screen Saver.app"
+            BlueprintName = "watch"
+            ReferencedContainer = "container:Screen Saver.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+>>>>>>> parent of b5106e6 (Updates for window for Macos)
 =======
             BlueprintIdentifier = "2267C89F2742303E00ACF2BC"
             BuildableName = "Screen Saver.app"

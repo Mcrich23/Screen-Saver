@@ -105,6 +105,7 @@
 		2267C8A02742303E00ACF2BC /* Screen Saver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Screen Saver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2267C8A32742303E00ACF2BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 <<<<<<< HEAD
+<<<<<<< HEAD
 		22DCB729274571E60013840E /* GoogleService-Info-4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-4.plist"; sourceTree = "<group>"; };
 		22DCB72B274572270013840E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		22DCB72D274572770013840E /* GoogleService-Info-2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-2.plist"; sourceTree = "<group>"; };
@@ -117,6 +118,8 @@
 		22DCB78C274581290013840E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "Screen Saver1/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		22DCB78E274581610013840E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Screen Saver1/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
 =======
+=======
+>>>>>>> parent of b5106e6 (Updates for window for Macos)
 		2267C8A52742304100ACF2BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2267C8AB2742304100ACF2BC /* watch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "watch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2267C8B02742304100ACF2BC /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
@@ -126,6 +129,9 @@
 		2267C8B82742304200ACF2BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22C21F382742D5BA00AC01EE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		22E2CB0C2740F5F900A621CC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+<<<<<<< HEAD
+>>>>>>> parent of b5106e6 (Updates for window for Macos)
+=======
 >>>>>>> parent of b5106e6 (Updates for window for Macos)
 		22E938C52741DA1200FE53E4 /* iosScreenSaver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosScreenSaver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E938C72741DA1200FE53E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -284,10 +290,14 @@
 			isa = PBXGroup;
 			children = (
 <<<<<<< HEAD
+<<<<<<< HEAD
 				22E938C52741DA1200FE53E4 /* iosScreenSaver.app */,
 				22FAC7722744503A0020B5FD /* SSR.app */,
 				22FAC77D2744503C0020B5FD /* watch WatchKit Extension.appex */,
 				22DCB779274580F80013840E /* Screen Saver.app */,
+=======
+				D328C73625EE080D003CEAE8 /* Preview Assets.xcassets */,
+>>>>>>> parent of b5106e6 (Updates for window for Macos)
 =======
 				D328C73625EE080D003CEAE8 /* Preview Assets.xcassets */,
 >>>>>>> parent of b5106e6 (Updates for window for Macos)
@@ -299,9 +309,15 @@
 
 /* Begin PBXNativeTarget section */
 <<<<<<< HEAD
+<<<<<<< HEAD
 		22DCB778274580F80013840E /* Screen Saver */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22DCB785274580FA0013840E /* Build configuration list for PBXNativeTarget "Screen Saver" */;
+=======
+		2267C89F2742303E00ACF2BC /* watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2267C8C32742304200ACF2BC /* Build configuration list for PBXNativeTarget "watch" */;
+>>>>>>> parent of b5106e6 (Updates for window for Macos)
 =======
 		2267C89F2742303E00ACF2BC /* watch */ = {
 			isa = PBXNativeTarget;
@@ -317,6 +333,7 @@
 			dependencies = (
 				2267C8AE2742304100ACF2BC /* PBXTargetDependency */,
 			);
+<<<<<<< HEAD
 <<<<<<< HEAD
 			name = "Screen Saver";
 			packageProductDependencies = (
@@ -340,6 +357,21 @@
 				2267C8A82742304100ACF2BC /* Frameworks */,
 				2267C8A92742304100ACF2BC /* Resources */,
 			);
+=======
+			name = watch;
+			productName = watch;
+			productReference = 2267C8A02742303E00ACF2BC /* Screen Saver.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		2267C8AA2742304100ACF2BC /* watch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2267C8C22742304200ACF2BC /* Build configuration list for PBXNativeTarget "watch WatchKit Extension" */;
+			buildPhases = (
+				2267C8A72742304100ACF2BC /* Sources */,
+				2267C8A82742304100ACF2BC /* Frameworks */,
+				2267C8A92742304100ACF2BC /* Resources */,
+			);
+>>>>>>> parent of b5106e6 (Updates for window for Macos)
 			buildRules = (
 			);
 			dependencies = (
@@ -348,6 +380,9 @@
 			productName = "watch WatchKit Extension";
 			productReference = 2267C8AB2742304100ACF2BC /* watch WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
+<<<<<<< HEAD
+>>>>>>> parent of b5106e6 (Updates for window for Macos)
+=======
 >>>>>>> parent of b5106e6 (Updates for window for Macos)
 		};
 		22E938C42741DA1200FE53E4 /* iosScreenSaver */ = {
@@ -454,7 +489,11 @@
 			projectRoot = "";
 			targets = (
 <<<<<<< HEAD
+<<<<<<< HEAD
 				22DCB778274580F80013840E /* Screen Saver */,
+=======
+				D328C72B25EE080C003CEAE8 /* Screen Saver */,
+>>>>>>> parent of b5106e6 (Updates for window for Macos)
 =======
 				D328C72B25EE080C003CEAE8 /* Screen Saver */,
 >>>>>>> parent of b5106e6 (Updates for window for Macos)
@@ -945,7 +984,11 @@
 
 /* Begin XCConfigurationList section */
 <<<<<<< HEAD
+<<<<<<< HEAD
 		22DCB785274580FA0013840E /* Build configuration list for PBXNativeTarget "Screen Saver" */ = {
+=======
+		2267C8C22742304200ACF2BC /* Build configuration list for PBXNativeTarget "watch WatchKit Extension" */ = {
+>>>>>>> parent of b5106e6 (Updates for window for Macos)
 =======
 		2267C8C22742304200ACF2BC /* Build configuration list for PBXNativeTarget "watch WatchKit Extension" */ = {
 >>>>>>> parent of b5106e6 (Updates for window for Macos)
