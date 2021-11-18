@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D328C72B25EE080C003CEAE8"
-               BuildableName = "Screen Saver.app"
-               BlueprintName = "Screen Saver"
+               BuildableName = "Screen Saver Reciever.app"
+               BlueprintName = "Screen Saver Reciever"
                ReferencedContainer = "container:Screen Saver.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D328C72B25EE080C003CEAE8"
-            BuildableName = "Screen Saver.app"
-            BlueprintName = "Screen Saver"
+            BuildableName = "Screen Saver Reciever.app"
+            BlueprintName = "Screen Saver Reciever"
             ReferencedContainer = "container:Screen Saver.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D328C72B25EE080C003CEAE8"
-            BuildableName = "Screen Saver.app"
-            BlueprintName = "Screen Saver"
+            BuildableName = "Screen Saver Reciever.app"
+            BlueprintName = "Screen Saver Reciever"
             ReferencedContainer = "container:Screen Saver.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

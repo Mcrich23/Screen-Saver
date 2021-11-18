@@ -20,9 +20,8 @@
 		2267C8AC2742304100ACF2BC /* watch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2267C8AB2742304100ACF2BC /* watch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2267C8B12742304100ACF2BC /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2267C8B02742304100ACF2BC /* InterfaceController.swift */; };
 		2267C8B32742304100ACF2BC /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2267C8B22742304100ACF2BC /* ExtensionDelegate.swift */; };
-		2267C8B52742304100ACF2BC /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2267C8B42742304100ACF2BC /* ComplicationController.swift */; };
 		2267C8B72742304200ACF2BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2267C8B62742304200ACF2BC /* Assets.xcassets */; };
-		2267C8BB2742304200ACF2BC /* Screen Saver.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2267C8A02742303E00ACF2BC /* Screen Saver.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2267C8BB2742304200ACF2BC /* SSR.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2267C8A02742303E00ACF2BC /* SSR.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		22C21F392742D5BA00AC01EE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22C21F382742D5BA00AC01EE /* GoogleService-Info.plist */; };
 		22C21F3A2742D5BA00AC01EE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22C21F382742D5BA00AC01EE /* GoogleService-Info.plist */; };
 		22E2CB0D2740F5F900A621CC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22E2CB0C2740F5F900A621CC /* GoogleService-Info.plist */; };
@@ -65,7 +64,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				2267C8BB2742304200ACF2BC /* Screen Saver.app in Embed Watch Content */,
+				2267C8BB2742304200ACF2BC /* SSR.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,13 +84,12 @@
 
 /* Begin PBXFileReference section */
 		2265C19D2745C53A0015240A /* Screen Saver.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Screen Saver.entitlements"; sourceTree = "<group>"; };
-		2267C8A02742303E00ACF2BC /* Screen Saver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Screen Saver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2267C8A02742303E00ACF2BC /* SSR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2267C8A32742303E00ACF2BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		2267C8A52742304100ACF2BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2267C8AB2742304100ACF2BC /* watch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "watch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2267C8B02742304100ACF2BC /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		2267C8B22742304100ACF2BC /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		2267C8B42742304100ACF2BC /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		2267C8B62742304200ACF2BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2267C8B82742304200ACF2BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22C21F382742D5BA00AC01EE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -105,7 +103,7 @@
 		22E938D52741DA1300FE53E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22E938D92741DA2300FE53E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22E938DD274226F600FE53E4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		D328C72C25EE080D003CEAE8 /* Screen Saver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Screen Saver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D328C72C25EE080D003CEAE8 /* Screen Saver Reciever.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Screen Saver Reciever.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D328C72F25EE080D003CEAE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D328C73125EE080D003CEAE8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D328C73325EE080D003CEAE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -176,7 +174,6 @@
 			children = (
 				2267C8B02742304100ACF2BC /* InterfaceController.swift */,
 				2267C8B22742304100ACF2BC /* ExtensionDelegate.swift */,
-				2267C8B42742304100ACF2BC /* ComplicationController.swift */,
 				2267C8B62742304200ACF2BC /* Assets.xcassets */,
 				22C21F382742D5BA00AC01EE /* GoogleService-Info.plist */,
 				2267C8B82742304200ACF2BC /* Info.plist */,
@@ -214,9 +211,9 @@
 		D328C72D25EE080D003CEAE8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D328C72C25EE080D003CEAE8 /* Screen Saver.app */,
+				D328C72C25EE080D003CEAE8 /* Screen Saver Reciever.app */,
 				22E938C52741DA1200FE53E4 /* iosScreenSaver.app */,
-				2267C8A02742303E00ACF2BC /* Screen Saver.app */,
+				2267C8A02742303E00ACF2BC /* SSR.app */,
 				2267C8AB2742304100ACF2BC /* watch WatchKit Extension.appex */,
 			);
 			name = Products;
@@ -268,7 +265,7 @@
 				2265C1972745A2EF0015240A /* FirebaseDatabaseSwift-Beta */,
 			);
 			productName = watch;
-			productReference = 2267C8A02742303E00ACF2BC /* Screen Saver.app */;
+			productReference = 2267C8A02742303E00ACF2BC /* SSR.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
 		2267C8AA2742304100ACF2BC /* watch WatchKit Extension */ = {
@@ -315,9 +312,9 @@
 			productReference = 22E938C52741DA1200FE53E4 /* iosScreenSaver.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D328C72B25EE080C003CEAE8 /* Screen Saver */ = {
+		D328C72B25EE080C003CEAE8 /* Screen Saver Reciever */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D328C73F25EE080D003CEAE8 /* Build configuration list for PBXNativeTarget "Screen Saver" */;
+			buildConfigurationList = D328C73F25EE080D003CEAE8 /* Build configuration list for PBXNativeTarget "Screen Saver Reciever" */;
 			buildPhases = (
 				D328C72825EE080C003CEAE8 /* Sources */,
 				D328C72925EE080C003CEAE8 /* Frameworks */,
@@ -327,13 +324,13 @@
 			);
 			dependencies = (
 			);
-			name = "Screen Saver";
+			name = "Screen Saver Reciever";
 			packageProductDependencies = (
 				2265C18C2745A2CE0015240A /* FirebaseDatabase */,
 				2265C18E2745A2CE0015240A /* FirebaseDatabaseSwift-Beta */,
 			);
 			productName = WeatherApp;
-			productReference = D328C72C25EE080D003CEAE8 /* Screen Saver.app */;
+			productReference = D328C72C25EE080D003CEAE8 /* Screen Saver Reciever.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -375,7 +372,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D328C72B25EE080C003CEAE8 /* Screen Saver */,
+				D328C72B25EE080C003CEAE8 /* Screen Saver Reciever */,
 				22E938C42741DA1200FE53E4 /* iosScreenSaver */,
 				2267C89F2742303E00ACF2BC /* watch */,
 				2267C8AA2742304100ACF2BC /* watch WatchKit Extension */,
@@ -434,7 +431,6 @@
 			files = (
 				2267C8B32742304100ACF2BC /* ExtensionDelegate.swift in Sources */,
 				2267C8B12742304100ACF2BC /* InterfaceController.swift in Sources */,
-				2267C8B52742304100ACF2BC /* ComplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,10 +518,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = watch_WatchKit_Extension;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.Mcrich23.iosScreenSaver;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.Mcrich23.ScreenSaver.ios;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Mcrich23.ScreenSaver.ios.watchkitapp;
-				PRODUCT_NAME = "Screen Saver";
+				PRODUCT_NAME = SSR;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -548,10 +544,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = watch_WatchKit_Extension;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.Mcrich23.iosScreenSaver;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.Mcrich23.ScreenSaver.ios;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Mcrich23.ScreenSaver.ios.watchkitapp;
-				PRODUCT_NAME = "Screen Saver";
+				PRODUCT_NAME = SSR;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -565,7 +561,7 @@
 		2267C8C02742304200ACF2BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = "";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -596,7 +592,7 @@
 		2267C8C12742304200ACF2BC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = "";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -634,10 +630,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L7JQRVXU2V;
-				EXCLUDED_ARCHS = arm64;
+				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iosScreenSaver/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Screen Saver";
+				INFOPLIST_KEY_CFBundleDisplayName = SSR;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -667,10 +663,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L7JQRVXU2V;
-				EXCLUDED_ARCHS = arm64;
+				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iosScreenSaver/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Screen Saver";
+				INFOPLIST_KEY_CFBundleDisplayName = SSR;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -900,7 +896,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D328C73F25EE080D003CEAE8 /* Build configuration list for PBXNativeTarget "Screen Saver" */ = {
+		D328C73F25EE080D003CEAE8 /* Build configuration list for PBXNativeTarget "Screen Saver Reciever" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D328C74025EE080D003CEAE8 /* Debug */,
