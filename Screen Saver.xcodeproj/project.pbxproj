@@ -83,7 +83,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2265C19D2745C53A0015240A /* Screen Saver.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Screen Saver.entitlements"; sourceTree = "<group>"; };
 		2267C8A02742303E00ACF2BC /* SSR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2267C8A32742303E00ACF2BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		2267C8A52742304100ACF2BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -229,7 +228,6 @@
 				D328C73825EE080D003CEAE8 /* Main.storyboard */,
 				22E2CB0C2740F5F900A621CC /* GoogleService-Info.plist */,
 				D328C73B25EE080D003CEAE8 /* Info.plist */,
-				2265C19D2745C53A0015240A /* Screen Saver.entitlements */,
 				D328C73525EE080D003CEAE8 /* Preview Content */,
 			);
 			path = "Screen Saver";
@@ -513,7 +511,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = L7JQRVXU2V;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = watch_WatchKit_Extension;
@@ -539,7 +537,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = L7JQRVXU2V;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = watch_WatchKit_Extension;
@@ -564,7 +562,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = "";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = L7JQRVXU2V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "watch WatchKit Extension/Info.plist";
@@ -595,7 +593,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = "";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = L7JQRVXU2V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "watch WatchKit Extension/Info.plist";
@@ -628,7 +626,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = L7JQRVXU2V;
 				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
@@ -661,7 +659,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = L7JQRVXU2V;
 				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
@@ -812,7 +810,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Screen Saver/Preview Content\"";
 				DEVELOPMENT_TEAM = L7JQRVXU2V;
 				ENABLE_HARDENED_RUNTIME = NO;
@@ -839,7 +837,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Screen Saver/Preview Content\"";
 				DEVELOPMENT_TEAM = L7JQRVXU2V;
 				ENABLE_HARDENED_RUNTIME = NO;

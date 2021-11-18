@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2267C89F2742303E00ACF2BC"
-               BuildableName = "Screen Saver.app"
+               BuildableName = "SSR.app"
                BlueprintName = "watch"
                ReferencedContainer = "container:Screen Saver.xcodeproj">
             </BuildableReference>
@@ -61,7 +61,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2267C89F2742303E00ACF2BC"
-            BuildableName = "Screen Saver.app"
+            BuildableName = "SSR.app"
             BlueprintName = "watch"
             ReferencedContainer = "container:Screen Saver.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2267C89F2742303E00ACF2BC"
-            BuildableName = "Screen Saver.app"
+            BuildableName = "SSR.app"
             BlueprintName = "watch"
             ReferencedContainer = "container:Screen Saver.xcodeproj">
          </BuildableReference>
@@ -89,7 +89,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2267C89F2742303E00ACF2BC"
-            BuildableName = "Screen Saver.app"
+            BuildableName = "SSR.app"
             BlueprintName = "watch"
             ReferencedContainer = "container:Screen Saver.xcodeproj">
          </BuildableReference>
