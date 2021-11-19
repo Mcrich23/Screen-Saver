@@ -16,7 +16,7 @@
                                 <label width="0.5" alignment="left" text="Pairing Code:" numberOfLines="0" id="yhl-cO-5Yz"/>
                                 <textField width="0.5" alignment="left" placeholder="Enter" id="2h1-zZ-Fpz">
                                     <connections>
-                                        <action selector="codeCommit:" destination="AgC-eL-Hgc" id="bEO-Cr-ho6"/>
+                                        <action selector="codeCommit:" destination="AgC-eL-Hgc" id="CQC-Lz-58p"/>
                                     </connections>
                                 </textField>
                             </items>
@@ -35,7 +35,7 @@
                     </items>
                     <connections>
                         <outlet property="error" destination="OuA-dn-AVx" id="FWU-Sh-Hep"/>
-                        <outlet property="pairingCode" destination="2h1-zZ-Fpz" id="BUa-lm-gVW"/>
+                        <outlet property="pairingCode" destination="2h1-zZ-Fpz" id="mCw-Ko-nm4"/>
                         <outlet property="success" destination="v6p-Jl-xW3" id="Whf-Hj-9MR"/>
                     </connections>
                 </controller>

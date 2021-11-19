@@ -9,13 +9,13 @@ import UIKit
 import Firebase
 import WatchConnectivity
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     let ref = Database.database().reference()
     var session: WCSession?
     @IBOutlet weak var code: UITextField!
     func startScreenSaver() {
-        codeCommit(self)
+        codeCommit(code)
         print("code.text = \(code.text ?? "nil")")
         if code.text == "" {
             errorAlert(error: "No Pairing Code")
@@ -41,11 +41,18 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         code.text = UserDefaults.standard.string(forKey: "pairingCode")
         configureWatchKitSesstion()
+        self.code.delegate = self
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
     
     @IBAction func start(_ sender: Any) {
         startScreenSaver()
     }
+    
     @IBAction func codeCommit(_ sender: Any) {
         print("commit code")
         if let validSession = self.session, validSession.isReachable {//5.1
@@ -102,6 +109,11 @@ extension ViewController: WCSessionDelegate {
       if let value = message["startScreenSaver"] as? Bool {
           self.startScreenSaver()
       }
+        if let value = message["pairingCode"] as? String {//**7.1
+            print("code = \(value)")
+            UserDefaults.standard.set(value, forKey: "pairingCode")
+            self.code.text = value
+        }
     }
   }
 }

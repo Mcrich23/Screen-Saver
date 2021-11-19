@@ -28,7 +28,7 @@ class InterfaceController: WKInterfaceController {
     }
     
     func startScreenSaver() {
-        codeCommit(self)
+        pairingCodeCommit(commit: code ?? "")
         print("code.text = \(code)")
         if code == "" {
             errorCode(error: "No pairing code found, please enter one to continue")
@@ -48,8 +48,13 @@ class InterfaceController: WKInterfaceController {
             }
         }
     }
-    @IBAction func codeCommit(_ sender: Any) {
-        UserDefaults.standard.set(code, forKey: "pairingCode")
+    func pairingCodeCommit(commit: String) {
+        print("commit code = \(commit)")
+        UserDefaults.standard.set(commit, forKey: "pairingCode")
+        session.sendMessage(["pairingCode" : commit ?? ""], replyHandler: nil, errorHandler: nil)
+    }
+    @IBAction func codeCommit(_ sender: NSString?) {
+        pairingCodeCommit(commit: "\(sender ?? "")")
     }
     override func awake(withContext context: Any?) {
         // Configure interface objects here.
@@ -76,7 +81,7 @@ class InterfaceController: WKInterfaceController {
         if code == "" {
             startScreenSaver()
         }else {
-            errorCode(error: "Error: No pairing code found, please enter a pairing code on your iPhone.")
+            errorCode(error: "No pairing code found, please enter one to continue")
         }
     }
 }
@@ -89,9 +94,12 @@ extension InterfaceController: WCSessionDelegate {
     
     print("received data: \(message)")
     if let value = message["pairingCode"] as? String {//**7.1
+        print("code = \(value)")
         UserDefaults.standard.set(value, forKey: "pairingCode")
         code = value
-        pairingCode.setText("Pairing Code: \(value)")
+        DispatchQueue.main.async {
+            self.pairingCode.setText(value)
+        }
     }
   }
 }
