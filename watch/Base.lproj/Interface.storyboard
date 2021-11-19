@@ -9,7 +9,7 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="watch" customModuleProvider="target">
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SSR" customModuleProvider="target">
                     <items>
                         <group width="1" alignment="left" id="ab7-kl-KFH">
                             <items>
@@ -26,16 +26,17 @@
                                 <action selector="start" destination="AgC-eL-Hgc" id="NIg-OO-F3T"/>
                             </connections>
                         </button>
-                        <label alignment="left" text="Error: " textAlignment="center" numberOfLines="0" id="OuA-dn-AVx">
+                        <label alignment="left" hidden="YES" text="Error: " textAlignment="center" numberOfLines="0" id="OuA-dn-AVx">
                             <color key="textColor" red="1" green="0.22207552103151307" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </label>
-                        <label alignment="left" text="Starting Screen Saver, please make sure Screen Saver is open on your Mac" textAlignment="center" numberOfLines="0" id="v6p-Jl-xW3">
+                        <label alignment="left" hidden="YES" text="Starting Screen Saver, please make sure Screen Saver Reciever is open on your Mac" textAlignment="center" numberOfLines="0" id="v6p-Jl-xW3">
                             <color key="textColor" red="0.39030092241369996" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </label>
                     </items>
                     <connections>
                         <outlet property="error" destination="OuA-dn-AVx" id="FWU-Sh-Hep"/>
                         <outlet property="pairingCode" destination="2h1-zZ-Fpz" id="BUa-lm-gVW"/>
+                        <outlet property="success" destination="v6p-Jl-xW3" id="Whf-Hj-9MR"/>
                     </connections>
                 </controller>
             </objects>

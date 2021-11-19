@@ -25,6 +25,7 @@
 		22C21F392742D5BA00AC01EE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22C21F382742D5BA00AC01EE /* GoogleService-Info.plist */; };
 		22C21F3A2742D5BA00AC01EE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22C21F382742D5BA00AC01EE /* GoogleService-Info.plist */; };
 		22E2CB0D2740F5F900A621CC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22E2CB0C2740F5F900A621CC /* GoogleService-Info.plist */; };
+		22E4439327471C5400D5D55D /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E4439227471C5300D5D55D /* NetworkMonitor.swift */; };
 		22E938C82741DA1200FE53E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E938C72741DA1200FE53E4 /* AppDelegate.swift */; };
 		22E938CA2741DA1200FE53E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E938C92741DA1200FE53E4 /* SceneDelegate.swift */; };
 		22E938CC2741DA1200FE53E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E938CB2741DA1200FE53E4 /* ViewController.swift */; };
@@ -93,6 +94,7 @@
 		2267C8B82742304200ACF2BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22C21F382742D5BA00AC01EE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		22E2CB0C2740F5F900A621CC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		22E4439227471C5300D5D55D /* NetworkMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		22E938C52741DA1200FE53E4 /* iosScreenSaver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosScreenSaver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E938C72741DA1200FE53E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22E938C92741DA1200FE53E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 				D328C73125EE080D003CEAE8 /* ContentView.swift */,
 				D328C73325EE080D003CEAE8 /* Assets.xcassets */,
 				D328C73825EE080D003CEAE8 /* Main.storyboard */,
+				22E4439227471C5300D5D55D /* NetworkMonitor.swift */,
 				22E2CB0C2740F5F900A621CC /* GoogleService-Info.plist */,
 				D328C73B25EE080D003CEAE8 /* Info.plist */,
 				D328C73525EE080D003CEAE8 /* Preview Content */,
@@ -447,6 +450,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D328C73225EE080D003CEAE8 /* ContentView.swift in Sources */,
+				22E4439327471C5400D5D55D /* NetworkMonitor.swift in Sources */,
 				D328C74525EE0883003CEAE8 /* StatusBarController.swift in Sources */,
 				D328C73025EE080D003CEAE8 /* AppDelegate.swift in Sources */,
 			);
@@ -511,7 +515,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = L7JQRVXU2V;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = watch_WatchKit_Extension;
@@ -537,7 +541,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = L7JQRVXU2V;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = watch_WatchKit_Extension;
@@ -562,7 +566,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = "";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = L7JQRVXU2V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "watch WatchKit Extension/Info.plist";
@@ -593,7 +597,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = "";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = L7JQRVXU2V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "watch WatchKit Extension/Info.plist";
@@ -626,7 +630,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = L7JQRVXU2V;
 				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
@@ -659,7 +663,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = L7JQRVXU2V;
 				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
@@ -810,7 +814,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Screen Saver/Preview Content\"";
 				DEVELOPMENT_TEAM = L7JQRVXU2V;
 				ENABLE_HARDENED_RUNTIME = NO;
@@ -821,7 +825,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Mcrich23.ScreenSaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -837,7 +842,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Screen Saver/Preview Content\"";
 				DEVELOPMENT_TEAM = L7JQRVXU2V;
 				ENABLE_HARDENED_RUNTIME = NO;
@@ -848,7 +853,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Mcrich23.ScreenSaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

@@ -20,6 +20,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         print("hasOppened = \(AppDelegate.hasOpened)")
+        NetworkMonitor.shared.startMonitoring()
         FirebaseApp.configure()
         setupFirebase()
         let contentView = ContentView()

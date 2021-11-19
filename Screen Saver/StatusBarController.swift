@@ -33,8 +33,8 @@ class StatusBarController {
         let event = NSApp.currentEvent!
         print("hasOppened = \(AppDelegate.hasOpened)")
         if AppDelegate.hasOpened {
-            if event.type == NSEvent.EventType.leftMouseUp {
-                print("Right click")
+            if event.type == NSEvent.EventType.rightMouseUp {
+                print("Start Screen Saver")
                 if(popover.isShown) {
                     hidePopover(sender)
                 }else {
@@ -48,7 +48,7 @@ class StatusBarController {
                                                        completionHandler: nil)
                 }
             } else {
-                print("Left click")
+                print("Show Menu")
                 if(popover.isShown) {
                     hidePopover(sender)
                 }else {

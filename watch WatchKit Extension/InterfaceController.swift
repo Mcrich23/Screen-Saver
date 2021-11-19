@@ -15,14 +15,15 @@ class InterfaceController: WKInterfaceController {
     var code = UserDefaults.standard.string(forKey: "pairingCode")
     let session = WCSession.default
     @IBOutlet weak var pairingCode: WKInterfaceTextField!
-//    let db = Firestore.firestore()
+    let ref = Database.database().reference()
     @IBOutlet weak var error: WKInterfaceLabel!
+    @IBOutlet weak var success: WKInterfaceLabel!
     
     func errorCode(error: String) {
         self.error.setText("Error: \(error)")
-        self.error.setAlpha(1)
+        self.error.setHidden(false)
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            self.error.setAlpha(0)
+            self.error.setHidden(true)
         }
     }
     
@@ -32,22 +33,19 @@ class InterfaceController: WKInterfaceController {
         if code == "" {
             errorCode(error: "No pairing code found, please enter one to continue")
         }else {
-//            db.collection("pairingCodes").document(code ?? "").addSnapshotListener { doc, error in
-//            if error == nil {
-//                if doc != nil && doc!.exists {
-//                    if (doc!.get("ScreenSaver") as? Bool) != nil {
-//                        print("doc exists")
-//                        self.db.collection("pairingCodes").document(self.code ?? "").setData(["ScreenSaver" : true])
-//                    }else {
-//                        self.errorCode(error: "Pairing Code Does Not Exist")
-//                    }
-//                }else {
-//                    self.errorCode(error: "Pairing Code Does Not Exist")
-//                }
-//            }else {
-//                self.errorCode(error: "Document Collection Does Not Exist")
-//            }
-//        }
+            ref.child("pairingCodes").child(code ?? "").getData { err, snapshot in
+                if err == nil {
+                    if snapshot.exists() {
+                        print("doc exists")
+                        self.ref.child("pairingCodes").child(self.code ?? "").setValue(["ScreenSaver" : true])
+                    }else {
+                        self.errorCode(error: "Pairing Code Does Not Exist")
+                    }
+                }else {
+                    print("error = \(err)")
+                    self.errorCode(error: "Pairing Code Document Does Not Exist")
+                }
+            }
         }
     }
     @IBAction func codeCommit(_ sender: Any) {
@@ -63,7 +61,10 @@ class InterfaceController: WKInterfaceController {
         session.delegate = self
         session.activate()
         code = UserDefaults.standard.string(forKey: "pairingCode")
-        error.setAlpha(0)
+        error.setAlpha(1)
+        error.setHidden(true)
+        success.setAlpha(1)
+        success.setHidden(true)
     }
     
     override func didDeactivate() {
@@ -75,11 +76,7 @@ class InterfaceController: WKInterfaceController {
         if code == "" {
             startScreenSaver()
         }else {
-            self.error.setText("Error: No pairing code found, please enter a pairing code on your iPhone.")
-            error.setAlpha(1)
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                self.error.setAlpha(0)
-            }
+            errorCode(error: "Error: No pairing code found, please enter a pairing code on your iPhone.")
         }
     }
 }
