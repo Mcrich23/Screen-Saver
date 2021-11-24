@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     let pairingCode = "Pairing Code: \(AppDelegate.pairingCode ?? "")"
     @State var connection = NetworkMonitor.shared.isConnected
+    @State var copied = false
     func checkConnection() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 7) {
             print("refresh")
@@ -17,13 +18,35 @@ struct ContentView: View {
             checkConnection()
         }
     }
+    func copyCode() {
+        print("copy")
+        NSPasteboard.general.setString(AppDelegate.pairingCode ?? "", forType: .string)
+        copied = true
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            copied = false
+        }
+    }
     var body: some View {
         VStack {
             Text("Screen Saver")
                 .font(.title)
                 .padding()
-            Text(pairingCode)
-                .frame(height: 25)
+            HStack {
+                Text(pairingCode)
+                    .onTapGesture {
+                        copyCode()
+                    }
+                Button {
+                    copyCode()
+                } label: {
+                    if copied {
+                        Image(systemName: "checkmark")
+                    }else {
+                        Image(systemName: "doc.on.clipboard")
+                    }
+                }
+            }
+            .frame(height: 25)
             HStack {
                 Text("Network Status:")
                 if connection {

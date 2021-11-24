@@ -18,7 +18,6 @@ class StatusBarController {
         self.popover = popover
         statusBar = NSStatusBar.init()
         statusItem = statusBar.statusItem(withLength: 28.0)
-        
         if let statusBarButton = statusItem.button {
             statusBarButton.image = #imageLiteral(resourceName: "Weather")
             statusBarButton.image?.size = NSSize(width: 18.0, height: 18.0)

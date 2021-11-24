@@ -27,6 +27,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         popover.contentSize = NSSize(width: 360, height: 360)
         popover.contentViewController = NSHostingController(rootView: contentView)
         statusBar = StatusBarController.init(popover)
+        NSPasteboard.general.declareTypes([.string], owner: nil)
     }
     func setupFirebase() {
         let ref = Database.database().reference()
