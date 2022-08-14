@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2267C89F2742303E00ACF2BC"
-               BuildableName = "SSR.app"
+               BuildableName = "SS Remote.app"
                BlueprintName = "watch"
                ReferencedContainer = "container:Screen Saver.xcodeproj">
             </BuildableReference>
@@ -65,18 +65,16 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "32">
-      <RemoteRunnable
-         runnableDebuggingMode = "2"
-         BundleIdentifier = "com.apple.Carousel"
-         RemotePath = "/(null)">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2267C89F2742303E00ACF2BC"
-            BuildableName = "SSR.app"
+            BuildableName = "SS Remote.app"
             BlueprintName = "watch"
             ReferencedContainer = "container:Screen Saver.xcodeproj">
          </BuildableReference>
-      </RemoteRunnable>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -85,27 +83,16 @@
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES"
       launchAutomaticallySubstyle = "32">
-      <RemoteRunnable
-         runnableDebuggingMode = "2"
-         BundleIdentifier = "com.apple.Carousel"
-         RemotePath = "/(null)">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2267C89F2742303E00ACF2BC"
-            BuildableName = "SSR.app"
+            BuildableName = "SS Remote.app"
             BlueprintName = "watch"
             ReferencedContainer = "container:Screen Saver.xcodeproj">
          </BuildableReference>
-      </RemoteRunnable>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2267C89F2742303E00ACF2BC"
-            BuildableName = "SSR.app"
-            BlueprintName = "watch"
-            ReferencedContainer = "container:Screen Saver.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

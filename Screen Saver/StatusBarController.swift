@@ -36,8 +36,7 @@ class StatusBarController {
                 print("Start Screen Saver")
                 if(popover.isShown) {
                     hidePopover(sender)
-                }else {
-        //            showPopover(sender)
+                }
                     let url = NSURL(fileURLWithPath: "/System/Library/CoreServices/ScreenSaverEngine.app", isDirectory: true) as URL
                     let path = "/bin"
                     let configuration = NSWorkspace.OpenConfiguration()
@@ -45,7 +44,6 @@ class StatusBarController {
                     NSWorkspace.shared.openApplication(at: url,
                                                        configuration: configuration,
                                                        completionHandler: nil)
-                }
             } else {
                 print("Show Menu")
                 if(popover.isShown) {

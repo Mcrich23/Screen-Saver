@@ -25,6 +25,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
                     if snapshot.exists() {
                         print("doc exists")
                         self.ref.child("pairingCodes").child(self.code.text ?? "").setValue(["ScreenSaver" : true])
+                        let alert = UIAlertController(title: "Success!", message: "Starting your mac's screen saver now. Please make sure Screen Saver Reciever is open and your mac is connected to the internet.", preferredStyle: .alert)
+                        
+                        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
+                            print("Dismissed \"starting\" alert")
+                        }))
+                        self.present(alert, animated: true, completion: nil)
                     }else {
                         self.errorAlert(error: "Pairing Code Does Not Exist")
                     }
@@ -51,6 +57,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func start(_ sender: Any) {
         startScreenSaver()
+    }
+    
+    @IBAction func getSSReciever(_ sender: Any) {
+        guard let url = URL(string: "https://mcrich23.com/screen-saver") else { return }
+        UIApplication.shared.open(url)
     }
     
     @IBAction func codeCommit(_ sender: Any) {

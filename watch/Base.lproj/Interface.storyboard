@@ -9,7 +9,7 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SSR" customModuleProvider="target">
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SS_Remote" customModuleProvider="target">
                     <items>
                         <group width="1" alignment="left" id="ab7-kl-KFH">
                             <items>
@@ -29,7 +29,7 @@
                         <label alignment="left" hidden="YES" text="Error: " textAlignment="center" numberOfLines="0" id="OuA-dn-AVx">
                             <color key="textColor" red="1" green="0.22207552103151307" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </label>
-                        <label alignment="left" hidden="YES" text="Starting Screen Saver, please make sure Screen Saver Reciever is open on your Mac" textAlignment="center" numberOfLines="0" id="v6p-Jl-xW3">
+                        <label alignment="left" hidden="YES" text="Starting your mac's screen saver now. Please make sure Screen Saver Reciever is open and your mac is connected to the internet." textAlignment="center" numberOfLines="0" id="v6p-Jl-xW3">
                             <color key="textColor" red="0.39030092241369996" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </label>
                     </items>

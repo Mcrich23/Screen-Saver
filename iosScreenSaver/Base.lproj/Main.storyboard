@@ -51,12 +51,24 @@
                                     <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HiU-oV-oLu"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfF-pE-e1m">
+                                <rect key="frame" x="86.666666666666671" y="367" width="216.66666666666663" height="33.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Get Screen Saver Reciever">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="getSSReciever:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Btc-g9-OG1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Of6-Pr-kls" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KCM-Yj-u1g"/>
                             <constraint firstItem="TzW-g2-Zot" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="PlG-Cu-OMm"/>
+                            <constraint firstItem="tfF-pE-e1m" firstAttribute="top" secondItem="lx3-Aq-d21" secondAttribute="bottom" constant="53" id="Qlx-lf-LvT"/>
+                            <constraint firstItem="tfF-pE-e1m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TaO-VQ-0CL"/>
                             <constraint firstItem="Of6-Pr-kls" firstAttribute="top" secondItem="TzW-g2-Zot" secondAttribute="bottom" constant="115" id="UXh-OG-6Bn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TzW-g2-Zot" secondAttribute="trailing" constant="32" id="csL-y0-JV4"/>
                             <constraint firstItem="lx3-Aq-d21" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iCz-0Z-YIL"/>

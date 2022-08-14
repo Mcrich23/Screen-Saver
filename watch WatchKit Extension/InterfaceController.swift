@@ -12,7 +12,11 @@ import Firebase
 
 
 class InterfaceController: WKInterfaceController {
-    var code = UserDefaults.standard.string(forKey: "pairingCode")
+    var code = UserDefaults.standard.string(forKey: "pairingCode") {
+        didSet {
+            pairingCodeCommit(commit: code ?? "")
+        }
+    }
     let session = WCSession.default
     @IBOutlet weak var pairingCode: WKInterfaceTextField!
     let ref = Database.database().reference()
@@ -38,6 +42,10 @@ class InterfaceController: WKInterfaceController {
                     if snapshot.exists() {
                         print("doc exists")
                         self.ref.child("pairingCodes").child(self.code ?? "").setValue(["ScreenSaver" : true])
+                        self.success.setHidden(false)
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                            self.success.setHidden(true)
+                        }
                     }else {
                         self.errorCode(error: "Pairing Code Does Not Exist")
                     }
@@ -51,10 +59,10 @@ class InterfaceController: WKInterfaceController {
     func pairingCodeCommit(commit: String) {
         print("commit code = \(commit)")
         UserDefaults.standard.set(commit, forKey: "pairingCode")
-        session.sendMessage(["pairingCode" : commit ?? ""], replyHandler: nil, errorHandler: nil)
+        session.sendMessage(["pairingCode" : commit], replyHandler: nil, errorHandler: nil)
     }
     @IBAction func codeCommit(_ sender: NSString?) {
-        pairingCodeCommit(commit: "\(sender ?? "")")
+        code = sender as? String
     }
     override func awake(withContext context: Any?) {
         // Configure interface objects here.
